@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunflower Shop 🌻</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffdf3;
+      color: #333;
+    }
+    header {
+      background: #f7c928;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo { font-size: 24px; font-weight: bold; color: #5b4300; }
+    nav a {
+      color: #5b4300;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 60px 8%;
+      background: #fff4b8;
+    }
+    .hero-text { max-width: 560px; }
+    .hero h1 { font-size: 48px; color: #5b4300; margin-bottom: 15px; }
+    .hero p { font-size: 18px; line-height: 1.6; margin-bottom: 25px; }
+    .sunflower {
+      font-size: 170px;
+      text-align: center;
+      min-width: 260px;
+    }
+    .btn {
+      display: inline-block;
+      background: #e9ad00;
+      color: white;
+      text-decoration: none;
+      border: 0;
+      padding: 12px 22px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .section { padding: 55px 8%; text-align: center; }
+    .section h2 { color: #5b4300; font-size: 32px; margin-bottom: 12px; }
+    .section > p { margin-bottom: 30px; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border: 1px solid #f0df91;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 5px 15px #00000012;
+    }
+    .flower { font-size: 80px; margin-bottom: 12px; }
+    .card h3 { color: #5b4300; margin-bottom: 10px; }
+    .price { font-size: 21px; font-weight: bold; color: #d38f00; margin: 15px 0; }
+    .about {
+      background: #fff4b8;
+    }
+    .order {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px #00000012;
+      text-align: left;
+    }
+    label { display: block; margin: 12px 0 6px; font-weight: bold; }
+    input, select, textarea {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+    textarea { min-height: 90px; resize: vertical; }
+    .order button { margin-top: 18px; width: 100%; }
+    footer {
+      background: #5b4300;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+    @media (max-width: 750px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero h1 { font-size: 36px; }
+      .sunflower { font-size: 120px; min-width: auto; }
+      .products { grid-template-columns: 1fr; }
+      nav a { margin-left: 8px; font-size: 14px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">🌻 Sunflower Shop</div>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#flowers">Sản phẩm</a>
+      <a href="#order">Đặt hoa</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Trao nắng, trao yêu thương 🌻</h1>
+      <p>
+        Những bó hoa hướng dương tươi sáng, phù hợp để tặng
+        bạn bè, gia đình và những người bạn yêu quý.
+      </p>
+      <a class="btn" href="#flowers">Xem hoa ngay</a>
+    </div>
+    <div class="sunflower">🌻</div>
+  </section>
+
+  <section class="section" id="flowers">
+    <h2>Hoa hướng dương của chúng tôi</h2>
+    <p>Chọn một bó hoa phù hợp với bạn.</p>
+
+    <div class="products">
+      <div class="card">
+        <div class="flower">🌻</div>
+        <h3>Bó Nắng Vàng</h3>
+        <p>Một bó hoa đơn giản, tươi sáng.</p>
+        <div class="price">150.000đ</div>
+        <a class="btn" href="#order">Mua ngay</a>
+      </div>
+
+      <div class="card">
+        <div class="flower">🌻🌻</div>
+        <h3>Bó Ánh Dương</h3>
+        <p>Bó hoa nổi bật dành cho người đặc biệt.</p>
+        <div class="price">250.000đ</div>
+        <a class="btn" href="#order">Mua ngay</a>
+      </div>
+
+      <div class="card">
+        <div class="flower">🌻🌻🌻</div>
+        <h3>Bó Mặt Trời</h3>
+        <p>Bó hoa lớn, rực rỡ và ấn tượng.</p>
+        <div class="price">350.000đ</div>
+        <a class="btn" href="#order">Mua ngay</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about">
+    <h2>Vì sao chọn Sunflower Shop?</h2>
+    <p>
+      🌻 Hoa tươi mỗi ngày &nbsp; | &nbsp;
+      🎁 Gói quà đẹp &nbsp; | &nbsp;
+      💛 Giá cả hợp lý
+    </p>
+  </section>
+
+  <section class="section" id="order">
+    <h2>Đặt hoa</h2>
+    <p>Điền thông tin bên dưới để đặt bó hoa của bạn.</p>
+
+    <form class="order" onsubmit="datHoa(event)">
+      <label>Họ và tên</label>
+      <input type="text" required placeholder="Nhập tên của bạn">
+
+      <label>Số điện thoại</label>
+      <input type="tel" required placeholder="Nhập số điện thoại">
+
+      <label>Chọn hoa</label>
+      <select>
+        <option>Bó Nắng Vàng - 150.000đ</option>
+        <option>Bó Ánh Dương - 250.000đ</option>
+        <option>Bó Mặt Trời - 350.000đ</option>
+      </select>
+
+      <label>Địa chỉ / Ghi chú</label>
+      <textarea placeholder="Nhập địa chỉ hoặc lời nhắn"></textarea>
+
+      <button class="btn" type="submit">🌻 Gửi đơn hàng</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Sunflower Shop 🌻</p>
+    <p>Trao nắng - Trao yêu thương</p>
+  </footer>
+
+  <script>
+    function datHoa(event) {
+      event.preventDefault();
+      alert("Cảm ơn bạn! Đơn hàng đã được ghi nhận 🌻");
+    }
+  </script>
+</body>
+</html>
